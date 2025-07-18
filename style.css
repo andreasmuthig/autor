@@ -103,3 +103,17 @@ button {
 .theme-dark .tile blockquote {
     color: #bbb;
 }
+
+.detail-section {
+    padding: 60px 40px;
+    background: #fff4e6;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+.detail-section h2 {
+    margin-top: 0;
+}
+.theme-dark .detail-section {
+    background: #1e1e1e;
+    color: #f2f2f2;
+}

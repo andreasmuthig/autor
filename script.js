@@ -15,3 +15,10 @@ function toggleTheme() {
     document.documentElement.classList.toggle('theme-dark');
     document.documentElement.classList.toggle('theme-light');
 }
+
+function scrollToDetails(id) {
+    const el = document.getElementById(id);
+    if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+    }
+}
