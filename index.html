@@ -55,5 +55,26 @@
     </section>
 
     <script src="script.js"></script>
+
+    <div id="about" class="detail-box" style="display:none; margin-top: 20px; background:#fff; padding:20px; border-radius:12px;">
+        <img src="img/IMG_1275.jpeg" alt="Andreas Muthig" style="max-width:150px; float:left; margin:0 20px 20px 0;">
+        <p>
+            Ich bin Produktionstechniker mit einer Leidenschaft für klare Kommunikation, smarte Werkzeuge und modernes Denken.<br>
+            Mein Ziel ist es, KI-Technik so zugänglich zu machen, dass jeder damit mehr erreicht – im Beruf, im Alltag und im kreativen Ausdruck.<br><br>
+            Ich schreibe, denke und teste – mit Neugier und einem wachen Blick für das, was möglich ist.
+        </p>
+    </div>
+
+    <script>
+    function toggleInfo(id) {
+        const box = document.getElementById(id);
+        if (box.style.display === "none") {
+            box.style.display = "block";
+            box.scrollIntoView({ behavior: "smooth" });
+        } else {
+            box.style.display = "none";
+        }
+    }
+    </script>
 </body>
 </html>
