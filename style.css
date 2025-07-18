@@ -63,22 +63,43 @@ button {
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 40px;
 }
 .tile {
     background: #fff;
-    padding: 40px;
-    text-align: center;
-    font-size: 1.2rem;
-    transition: transform 0.2s ease;
+    padding: 30px;
+    text-align: left;
+    font-size: 1rem;
+    transition: transform 0.2s ease, background 0.3s;
     border-radius: 8px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    color: #1a1a1a;
 }
 .tile:hover {
-    transform: rotateX(3deg) rotateY(-3deg) scale(1.03);
+    transform: rotateX(2deg) rotateY(-2deg) scale(1.02);
+}
+.tile img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.tile h2 {
+    margin-top: 0;
+}
+.tile ul {
+    padding-left: 20px;
+}
+.tile blockquote {
+    font-style: italic;
+    margin-top: 10px;
+    color: #555;
 }
 .theme-dark .tile {
-    background: #1e1e1e;
+    background: #1f1f1f;
+    color: #f2f2f2;
+}
+.theme-dark .tile blockquote {
+    color: #bbb;
 }
