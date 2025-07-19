@@ -2,90 +2,97 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 body {
+  font-family: 'Inter', sans-serif;
   background: #f2e0bc;
   color: #1a1a1a;
 }
-header nav {
+header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 2rem;
   border-bottom: 1px solid #ccc;
+  background: #f5e4c1;
 }
-.logo {
+.nav {
   font-weight: bold;
 }
-.nav-links a {
-  margin-left: 1.5rem;
+.menu a {
+  margin-left: 1rem;
   text-decoration: none;
   color: #1a1a1a;
 }
-.intro {
+.hero {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 3rem 2rem;
+  padding: 2rem;
 }
-.left {
+.hero-text {
   flex: 1;
 }
-.left h1 {
+.hero-text h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-.left p {
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+.hero-text p {
+  margin-bottom: 1rem;
 }
-.left button {
+.hero-text button {
   background: #1a1a1a;
   color: white;
-  padding: 0.8rem 1.8rem;
   border: none;
-  border-radius: 25px;
-  font-weight: bold;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
   cursor: pointer;
 }
-.right {
+.hero-img {
   flex: 1;
   text-align: center;
 }
-.right img {
+.hero-img img {
   max-width: 300px;
   border-radius: 8px;
 }
-.tiles-container {
+.slider-wrapper {
+  overflow: hidden;
+  padding: 1rem;
+}
+.slider {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 2rem 1rem;
   gap: 1rem;
-  scroll-behavior: smooth;
+  width: 200%;
+  transition: transform 0.3s ease-in-out;
 }
 .tile {
-  flex: 0 0 250px;
-  height: 150px;
-  border-radius: 8px;
-  padding: 1rem;
-  scroll-snap-align: start;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 0 0 25%;
+  min-width: 25%;
+  padding: 2rem;
+  border-radius: 10px;
   text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  scroll-snap-align: start;
+  user-select: none;
 }
-.tile h2 {
-  font-size: 1.1rem;
-}
-.tile-detail {
+.content-box {
   background: #fff4dc;
   min-height: 100px;
   padding: 2rem;
   font-size: 1.1rem;
   text-align: center;
   border-top: 2px solid #e0a04a;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.content-box {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+.content-box.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

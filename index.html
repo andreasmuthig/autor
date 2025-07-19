@@ -1,65 +1,41 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Andreas Muthig – Die Technik der klugen Frage</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andreas Muthig – Kachel-Slider</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
-      <span class="logo">ANDREAS MUTHIG</span>
-      <div class="nav-links">
-        <a href="#">Über mich</a>
-        <a href="#">Prompts & Tools</a>
-        <a href="#">Neuigkeiten</a>
-        <a href="#">Kontakt</a>
-      </div>
-    </nav>
+    <div class="nav">ANDREAS MUTHIG</div>
+    <div class="menu">
+      <a href="#">Über mich</a>
+      <a href="#">Prompts & Tools</a>
+      <a href="#">Neuigkeiten</a>
+      <a href="#">Kontakt</a>
+    </div>
   </header>
 
-  <section class="intro">
-    <div class="left">
-      <h1>DIE TECHNIK DER<br>KLUGEN FRAGE</h1>
-      <p>Wie du mit ChatGPT nicht einfach fragst –<br>sondern weiterdenkst. Klare Antworten durch<br>gezielte Prompt-Techniken.</p>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>DIE TECHNIK DER KLUGEN FRAGE</h1>
+      <p>Wie du mit ChatGPT nicht einfach fragst – sondern weiterdenkst. Klare Antworten durch gezielte Prompt-Techniken.</p>
       <button>Mehr erfahren</button>
     </div>
-    <div class="right">
-      <img src="portrait.png" alt="Illustration Andreas Muthig" />
+    <div class="hero-img">
+      <img src="portrait.png" alt="Andreas">
     </div>
   </section>
 
-  <section class="tiles-container" id="tileSlider">
-
-    <div class="tile" style="background-color: #f5dca3" onclick="selectTile(0)">
-      <h2>Über mich</h2>
-    </div>
-    <div class="tile" style="background-color: #f2b880" onclick="selectTile(1)">
-      <h2>Prompts & Tools</h2>
-    </div>
-    <div class="tile" style="background-color: #f5e4c1" onclick="selectTile(2)">
-      <h2>Neuigkeiten</h2>
-    </div>
-    <div class="tile" style="background-color: #e0a04a" onclick="selectTile(3)">
-      <h2>In Aktion mit GPT</h2>
-    </div>
-    <div class="tile" style="background-color: #d8c292" onclick="selectTile(4)">
-      <h2>Workshops</h2>
-    </div>
-    <div class="tile" style="background-color: #f4c58e" onclick="selectTile(5)">
-      <h2>Artikel</h2>
-    </div>
-    <div class="tile" style="background-color: #f8e1b0" onclick="selectTile(6)">
-      <h2>Rezensionen</h2>
-    </div>
-    <div class="tile" style="background-color: #c87f27" onclick="selectTile(7)">
-      <h2>FAQ</h2>
+  <section class="slider-wrapper">
+    <div class="slider" id="slider">
+<div class="tile" style="background:#f5dca3" onclick="showContent(0)">Über mich</div><div class="tile" style="background:#f2b880" onclick="showContent(1)">Prompts & Tools</div><div class="tile" style="background:#f5e4c1" onclick="showContent(2)">Neuigkeiten</div><div class="tile" style="background:#e0a04a" onclick="showContent(3)">In Aktion mit GPT</div><div class="tile" style="background:#d8c292" onclick="showContent(4)">Workshops</div><div class="tile" style="background:#f4c58e" onclick="showContent(5)">Artikel</div><div class="tile" style="background:#f8e1b0" onclick="showContent(6)">Rezensionen</div><div class="tile" style="background:#c87f27" onclick="showContent(7)">FAQ</div>
     </div>
   </section>
 
-  <section class="tile-detail" id="tileDetail">
+  <section class="content-box" id="contentBox">
     <p>Klicke auf eine Kachel, um mehr zu erfahren.</p>
   </section>
 
