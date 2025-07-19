@@ -31,11 +31,36 @@
     </div>
   </section>
 
-  <section class="tiles">
-    <div class="tile"><h2>Über mich</h2><p>Ich bin Andreas, Technikliebhaber. Buchautor und jemand, der gerne die richtigen Fragen stellt – auch an die KI.</p></div>
-    <div class="tile"><h2>Prompts & Tools</h2><p>Vorlagen und Anwendungen für bessere Ergebnisse mit KI</p></div>
-    <div class="tile"><h2>Neuigkeiten</h2><p>Aktuelles zu Projekten, Veröffentlichungen und mehr</p></div>
-    <div class="tile action"><h2>IN AKTION MIT GPT</h2><button>Jetzt Beitrag lesen</button></div>
+  <section class="tiles-container" id="tileSlider">
+
+    <div class="tile" style="background-color: #f5dca3" onclick="selectTile(0)">
+      <h2>Über mich</h2>
+    </div>
+    <div class="tile" style="background-color: #f2b880" onclick="selectTile(1)">
+      <h2>Prompts & Tools</h2>
+    </div>
+    <div class="tile" style="background-color: #f5e4c1" onclick="selectTile(2)">
+      <h2>Neuigkeiten</h2>
+    </div>
+    <div class="tile" style="background-color: #e0a04a" onclick="selectTile(3)">
+      <h2>In Aktion mit GPT</h2>
+    </div>
+    <div class="tile" style="background-color: #d8c292" onclick="selectTile(4)">
+      <h2>Workshops</h2>
+    </div>
+    <div class="tile" style="background-color: #f4c58e" onclick="selectTile(5)">
+      <h2>Artikel</h2>
+    </div>
+    <div class="tile" style="background-color: #f8e1b0" onclick="selectTile(6)">
+      <h2>Rezensionen</h2>
+    </div>
+    <div class="tile" style="background-color: #c87f27" onclick="selectTile(7)">
+      <h2>FAQ</h2>
+    </div>
+  </section>
+
+  <section class="tile-detail" id="tileDetail">
+    <p>Klicke auf eine Kachel, um mehr zu erfahren.</p>
   </section>
 
   <script src="script.js"></script>
