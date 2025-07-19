@@ -2,54 +2,24 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autorenseite – Andreas Muthig</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Andreas Muthig</h1>
-        <nav>
-            <ul>
-                <li><a href="#buch">Buch</a></li>
-                <li><a href="#prompts">Prompts</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-                <li><a href="#neuigkeiten">Neuigkeiten</a></li>
-            </ul>
-        </nav>
     </header>
-    <main class="slider">
-        <section class="tile tile1" id="buch">
-            <h2>Die Technik der klugen Frage</h2>
-            <p>Wie du mit ChatGPT nicht einfach fragst – sondern weiterdenkst.</p>
-            <button onclick="scrollToSection('details')">Mehr erfahren</button>
-        </section>
-        <section class="tile tile2" id="prompts">
-            <h2>Prompts & Tools</h2>
-            <p>Vorlagen, Tipps & Tricks für deinen KI-Alltag.</p>
-            <button>Entdecken</button>
-        </section>
-        <section class="tile tile3" id="kontakt">
-            <h2>Kontakt</h2>
-            <p>Jetzt Verbindung aufnehmen – direkt und einfach.</p>
-            <button>Nachricht senden</button>
-        </section>
-        <section class="tile tile4" id="neuigkeiten">
-            <h2>Neuigkeiten</h2>
-            <p>Bleib auf dem Laufenden zu Buch & Projekten.</p>
-            <button>Aktuelles</button>
-        </section>
-    </main>
-    <section id="details" class="detail-section">
-        <h2>Die Technik der klugen Frage – Details</h2>
-        <p>Dieses Buch zeigt dir, wie du deine Prompts gezielt so formulierst, dass die KI dich nicht nur versteht – sondern dir wirklich weiterhilft.</p>
-        <ul>
-            <li>✔ Flexibles System mit echten Beispielen</li>
-            <li>✔ Klare Techniken statt starrer Regeln</li>
-            <li>✔ Direkt anwendbare Vorlagen</li>
-        </ul>
+    <section class="carousel">
+        <div class="cards">
+            <div class="card" style="background-color:#F4E0B9;"><h2>Buch</h2><p>„Die Technik der klugen Frage“</p></div>
+            <div class="card" style="background-color:#DADADA;"><h2>Prompts & Tools</h2><p>Vorlagen & Techniken</p></div>
+            <div class="card" style="background-color:#D6C7F2;"><h2>Kontakt</h2><p>Jetzt schreiben</p></div>
+            <div class="card" style="background-color:#FFE7C2;"><h2>Neuigkeiten</h2><p>Was es Neues gibt</p></div>
+            <div class="card" style="background-color:#D2F0D4;"><h2>Über mich</h2><p>Autor, Techniker, Kreativer</p></div>
+            <div class="card" style="background-color:#C6E3F2;"><h2>Projekte</h2><p>Kommende Buchideen</p></div>
+        </div>
     </section>
-    <script src="script.js"></script>
 </body>
 </html>
