@@ -1,43 +1,80 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="theme-light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Andreas Muthig – Die Technik der klugen Frage</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorenseite Demo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <span class="logo">ANDREAS MUTHIG</span>
-      <div class="nav-links">
-        <a href="#">Über mich</a>
-        <a href="#">Prompts & Tools</a>
-        <a href="#">Neuigkeiten</a>
-        <a href="#">Kontakt</a>
-      </div>
-    </nav>
-  </header>
-
-  <section class="intro">
-    <div class="left">
-      <h1>DIE TECHNIK DER<br>KLUGEN FRAGE</h1>
-      <p>Wie du mit ChatGPT nicht einfach fragst –<br>sondern weiterdenkst. Klare Antworten durch<br>gezielte Prompt-Techniken.</p>
-      <button>Mehr erfahren</button>
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()">🌓</button>
     </div>
-    <div class="right">
-      <img src="portrait.png" alt="Portrait von Andreas" />
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Andreas Muthig</h1>
+            <p>Ich schreibe Werkzeuge für Gedanken.</p>
+            <button onclick="scrollToGrid()">Mehr erfahren</button>
+        </div>
+    </section>
+    <section class="grid" id="grid">
+        <div class="tile">Über mich</div>
+        <div class="tile book-tile">
+            <img src="https://via.placeholder.com/300x200?text=Buchcover" alt="Buchcover">
+            <h2>Die Technik der klugen Frage</h2>
+            <p>
+                Wie du mit ChatGPT nicht einfach fragst – sondern weiterdenkst.  
+                Klare Antworten durch gezielte Prompt-Techniken.  
+                Für Alltag, Beruf und kreative Projekte.
+            </p>
+            <button onclick="scrollToDetails('buch1')">Mehr erfahren</button>
+        </div>
+        <div class="tile">Prompts & Tools</div>
+        <div class="tile">Kontakt</div>
+    </section>
+
+    <section class="detail-section" id="buch1">
+        <h2>Die Technik der klugen Frage – Details</h2>
+        <p>
+            Du nutzt ChatGPT – und spürst: Da geht mehr. Manchmal passt die Antwort.  
+            Oft ist sie okay. Aber wie bekommst du Ergebnisse, die wirklich auf dich zugeschnitten sind?  
+            Antworten, mit denen du sofort etwas anfangen kannst – im Alltag, im Job, in deinen Projekten?
+        </p>
+        <p>
+            Dieses Buch zeigt dir, wie du deine Prompts gezielt so formulierst,  
+            dass die KI dich nicht nur versteht – sondern dir wirklich weiterhilft.
+        </p>
+        <ul>
+            <li>✔️ Flexibles System mit echten Beispielen</li>
+            <li>✔️ Klare Techniken statt starrer Regeln</li>
+            <li>✔️ Direkt anwendbare Vorlagen</li>
+            <li>✔️ Für Schreiben, Denken, Planen, Entwickeln</li>
+        </ul>
+        <blockquote>„Stell nicht einfach eine Frage – nutze eine Technik.“</blockquote>
+    </section>
+
+    <script src="script.js"></script>
+
+    <div id="about" class="detail-box" style="display:none; margin-top: 20px; background:#fff; padding:20px; border-radius:12px;">
+        <img src="img/IMG_1275.jpeg" alt="Andreas Muthig" style="max-width:150px; float:left; margin:0 20px 20px 0;">
+        <p>
+            Ich bin Produktionstechniker mit einer Leidenschaft für klare Kommunikation, smarte Werkzeuge und modernes Denken.<br>
+            Mein Ziel ist es, KI-Technik so zugänglich zu machen, dass jeder damit mehr erreicht – im Beruf, im Alltag und im kreativen Ausdruck.<br><br>
+            Ich schreibe, denke und teste – mit Neugier und einem wachen Blick für das, was möglich ist.
+        </p>
     </div>
-  </section>
 
-  <section class="tiles">
-    <div class="tile"><h2>Über mich</h2><p>Ich bin Andreas, Technikliebhaber. Buchautor und jemand, der gerne die richtigen Fragen stellt – auch an die KI.</p></div>
-    <div class="tile"><h2>Prompts & Tools</h2><p>Vorlagen und Anwendungen für bessere Ergebnisse mit KI</p></div>
-    <div class="tile"><h2>Neuigkeiten</h2><p>Aktuelles zu Projekten, Veröffentlichungen und mehr</p></div>
-    <div class="tile action"><h2>IN AKTION MIT GPT</h2><button>Jetzt Beitrag lesen</button></div>
-  </section>
-
-  <footer></footer>
-  <script src="script.js"></script>
+    <script>
+    function toggleInfo(id) {
+        const box = document.getElementById(id);
+        if (box.style.display === "none") {
+            box.style.display = "block";
+            box.scrollIntoView({ behavior: "smooth" });
+        } else {
+            box.style.display = "none";
+        }
+    }
+    </script>
 </body>
 </html>
