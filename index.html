@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andreas Muthig – Buchautor</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andreas Muthig – Buchautor</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">ANDREAS MUTHIG</div>
-            <ul class="nav-links">
-                <li><a href="#">Über mich</a></li>
-                <li><a href="#">Prompts & Tools</a></li>
-                <li><a href="#">Neuigkeiten</a></li>
-                <li><a href="#">Kontakt</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-900 text-white font-sans">
 
-    <section class="hero">
-        <h1>Die Technik der klugen Frage</h1>
-        <p>Wie du mit ChatGPT nicht einfach fragst – sondern weiterdenkst. Klare Antworten durch gezielte Prompt-Techniken.</p>
-        <a href="#" class="btn">Mehr erfahren</a>
-    </section>
+  <header class="p-6 flex justify-between items-center bg-gray-800">
+    <h1 class="text-xl font-bold">ANDREAS MUTHIG</h1>
+    <nav class="space-x-4">
+      <a href="#" class="hover:underline">Über mich</a>
+      <a href="#" class="hover:underline">Prompts & Tools</a>
+      <a href="#" class="hover:underline">Neuigkeiten</a>
+      <a href="#" class="hover:underline">Kontakt</a>
+    </nav>
+  </header>
 
-    <section class="tiles">
-        <div class="tile">
-            <h2>Über mich</h2>
-            <p>Ich bin Andreas, Technikliebhaber und Buchautor – immer auf der Suche nach der richtigen Frage.</p>
-        </div>
-        <div class="tile">
-            <h2>Prompts & Tools</h2>
-            <p>Vorlagen und Anwendungen für bessere Ergebnisse mit KI.</p>
-        </div>
-        <div class="tile">
-            <h2>Neuigkeiten</h2>
-            <p>Aktuelles zu Projekten, Veröffentlichungen und mehr.</p>
-        </div>
-        <div class="tile highlight">
-            <h2>In Aktion mit GPT</h2>
-            <a href="#" class="btn small">Jetzt Beitrag lesen</a>
-        </div>
-    </section>
+  <section class="text-center py-16 px-6" data-aos="fade-up">
+    <h2 class="text-4xl font-extrabold mb-4">Die Technik der klugen Frage</h2>
+    <p class="text-lg max-w-2xl mx-auto text-gray-300 mb-6">Wie du mit ChatGPT nicht einfach fragst – sondern weiterdenkst. Klare Antworten durch gezielte Prompt-Techniken.</p>
+    <a href="#" class="bg-green-600 hover:bg-green-500 px-6 py-3 rounded-lg font-semibold">Mehr erfahren</a>
+  </section>
 
-    <script src="js/main.js"></script>
+  <section class="overflow-x-auto px-6 py-10 whitespace-nowrap space-x-4 flex snap-x snap-mandatory" data-aos="fade-up">
+    <div class="snap-start shrink-0 w-80 bg-gray-800 p-6 rounded-lg">
+      <h3 class="text-2xl font-bold mb-2">Über mich</h3>
+      <p class="text-gray-400">Ich bin Andreas, Technikliebhaber und Buchautor – immer auf der Suche nach der richtigen Frage.</p>
+    </div>
+    <div class="snap-start shrink-0 w-80 bg-gray-800 p-6 rounded-lg">
+      <h3 class="text-2xl font-bold mb-2">Prompts & Tools</h3>
+      <p class="text-gray-400">Vorlagen und Anwendungen für bessere Ergebnisse mit KI.</p>
+    </div>
+    <div class="snap-start shrink-0 w-80 bg-gray-800 p-6 rounded-lg">
+      <h3 class="text-2xl font-bold mb-2">Neuigkeiten</h3>
+      <p class="text-gray-400">Aktuelles zu Projekten, Veröffentlichungen und mehr.</p>
+    </div>
+    <div class="snap-start shrink-0 w-80 bg-yellow-600 text-black p-6 rounded-lg">
+      <h3 class="text-2xl font-bold mb-2">In Aktion mit GPT</h3>
+      <a href="#" class="inline-block mt-4 px-4 py-2 bg-black text-white rounded">Jetzt Beitrag lesen</a>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
