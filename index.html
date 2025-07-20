@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andreas Muthig – Kachel-Slider</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Andreas Muthig – Kachel-Grid</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -29,9 +29,39 @@
     </div>
   </section>
 
-  <section class="slider-wrapper">
-    <div class="slider" id="slider">
-<div class="tile" style="background:#f5dca3" onclick="showContent(0)">Über mich</div><div class="tile" style="background:#f2b880" onclick="showContent(1)">Prompts & Tools</div><div class="tile" style="background:#f5e4c1" onclick="showContent(2)">Neuigkeiten</div><div class="tile" style="background:#e0a04a" onclick="showContent(3)">In Aktion mit GPT</div><div class="tile" style="background:#d8c292" onclick="showContent(4)">Workshops</div><div class="tile" style="background:#f4c58e" onclick="showContent(5)">Artikel</div><div class="tile" style="background:#f8e1b0" onclick="showContent(6)">Rezensionen</div><div class="tile" style="background:#c87f27" onclick="showContent(7)">FAQ</div>
+  <section class="grid-container">
+
+    <div class="tile" onclick="showContent(0)">
+      <h2>Über mich</h2>
+      <p>Ich bin Andreas, Technikliebhaber und Buchautor. Ich stelle die richtigen Fragen – auch an...</p>
+    </div>
+    <div class="tile" onclick="showContent(1)">
+      <h2>Prompts & Tools</h2>
+      <p>Vorlagen, Tools und Ideen, um ChatGPT besser zu nutzen....</p>
+    </div>
+    <div class="tile" onclick="showContent(2)">
+      <h2>Neuigkeiten</h2>
+      <p>Updates zu Projekten, Veröffentlichungen und Entwicklungen....</p>
+    </div>
+    <div class="tile tile-cta" onclick="showContent(3)">
+      <h2>In Aktion mit GPT</h2>
+      <p>Kreative Prompt-Beispiele und interaktive Experimente mit GPT....</p>
+    </div>
+    <div class="tile" onclick="showContent(4)">
+      <h2>Workshops</h2>
+      <p>Live-Workshops zu KI, Fragen, Texten und Tools....</p>
+    </div>
+    <div class="tile" onclick="showContent(5)">
+      <h2>Artikel</h2>
+      <p>Blog-Artikel über kluge Fragen, moderne Tools und Strategien....</p>
+    </div>
+    <div class="tile" onclick="showContent(6)">
+      <h2>Rezensionen</h2>
+      <p>Leserstimmen und Rezensionen zu meinem Buch und Projekten....</p>
+    </div>
+    <div class="tile" onclick="showContent(7)">
+      <h2>FAQ</h2>
+      <p>Antworten auf häufige Fragen zur Technik der klugen Frage....</p>
     </div>
   </section>
 
