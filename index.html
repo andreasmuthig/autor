@@ -1,64 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Andreas Muthig – Modern Grid</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Andreas Muthig – KI & Buch</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
-    <div class="logo">ANDREAS MUTHIG</div>
+    <h1>Andreas Muthig</h1>
     <nav>
       <a href="#">Über mich</a>
       <a href="#">Prompts & Tools</a>
       <a href="#">Neuigkeiten</a>
-      <a href="#">Kontakt</a>
+      <a href="#">In Aktion</a>
     </nav>
   </header>
 
-  <section class="grid">
-    <div class="tile tile-large dark">
-      <h1>Die Technik der klugen Frage</h1>
-      <p>Wie du mit KI nicht einfach fragst – sondern weiterdenkst. Dein Buch für moderne Denkmuster, klare Kommunikation und praktische KI-Nutzung.</p>
-      <button>Mehr erfahren</button>
-    </div>
-    <div class="tile image">
-      <img src="portrait.png" alt="Portrait">
-    </div>
-    <div class="tile tile-bg-0">
-      <h2>Über mich</h2>
-      <p>Erfahre mehr über über mich und wie du sie mit GPT für dich nutzen kannst.</p>
-    </div>
-    <div class="tile tile-bg-1">
-      <h2>Prompts & Tools</h2>
-      <p>Erfahre mehr über prompts & tools und wie du sie mit GPT für dich nutzen kannst.</p>
-    </div>
-    <div class="tile tile-bg-2">
-      <h2>Neuigkeiten</h2>
-      <p>Erfahre mehr über neuigkeiten und wie du sie mit GPT für dich nutzen kannst.</p>
-    </div>
-    <div class="tile tile-bg-3">
-      <h2>In Aktion mit GPT</h2>
-      <p>Erfahre mehr über in aktion mit gpt und wie du sie mit GPT für dich nutzen kannst.</p>
-    </div>
-    <div class="tile tile-bg-4">
-      <h2>Workshops</h2>
-      <p>Erfahre mehr über workshops und wie du sie mit GPT für dich nutzen kannst.</p>
-    </div>
-    <div class="tile tile-bg-5">
-      <h2>Artikel</h2>
-      <p>Erfahre mehr über artikel und wie du sie mit GPT für dich nutzen kannst.</p>
-    </div>
-    <div class="tile tile-bg-6">
-      <h2>Rezensionen</h2>
-      <p>Erfahre mehr über rezensionen und wie du sie mit GPT für dich nutzen kannst.</p>
-    </div>
-    <div class="tile tile-bg-7">
-      <h2>Kontakt</h2>
-      <p>Erfahre mehr über kontakt und wie du sie mit GPT für dich nutzen kannst.</p>
-    </div>
+  <section class="kachel-slider">
+    <div class="kachel" data-content="content1">Über mich</div>
+    <div class="kachel" data-content="content2">Prompts & Tools</div>
+    <div class="kachel" data-content="content3">Neuigkeiten</div>
+    <div class="kachel" data-content="content4">In Aktion mit GPT</div>
+    <div class="kachel" data-content="content5">Kapitel 1</div>
+    <div class="kachel" data-content="content6">Kapitel 2</div>
+    <div class="kachel" data-content="content7">Kapitel 3</div>
+    <div class="kachel" data-content="content8">Kontakt</div>
   </section>
+
+  <section id="kachel-content" class="content-area">
+    <p>Klicke auf eine Kachel, um den Inhalt zu sehen …</p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
