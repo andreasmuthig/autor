@@ -1,81 +1,62 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: system-ui, sans-serif;
-    background-color: #0d1117;
-    color: #ffffff;
-    line-height: 1.6;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: #161b22;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    color: #c9d1d9;
-    text-decoration: none;
-    font-weight: 500;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f8f8;
+  color: #111;
 }
 
 .hero {
-    padding: 4rem 2rem;
-    text-align: center;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1524646432686-56909f282f42?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
 }
 
-.hero p {
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    color: #8b949e;
+.kachel-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 2rem;
+  gap: 1rem;
+  background: #fff;
 }
 
-.btn {
-    padding: 0.75rem 1.5rem;
-    background-color: #238636;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.kachel {
+  min-width: 300px;
+  flex: 0 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-.tiles {
-    display: flex;
-    overflow-x: auto;
-    padding: 2rem;
-    gap: 1rem;
+.kachel:hover {
+  transform: scale(1.05) rotate(-1deg);
 }
 
-.tile {
-    flex: 0 0 250px;
-    background-color: #21262d;
-    padding: 1.5rem;
-    border-radius: 8px;
-    min-height: 200px;
+button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
-.tile.highlight {
-    background-color: #9a6700;
-    color: #fff;
+main {
+  padding: 4rem 2rem;
 }
 
-.tile .btn.small {
-    background-color: #0d1117;
-    margin-top: 1rem;
+section {
+  margin-bottom: 4rem;
 }
