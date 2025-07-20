@@ -1,76 +1,81 @@
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #1c1f24;
-  color: #fff;
-  overflow-x: hidden;
+    font-family: system-ui, sans-serif;
+    background-color: #0d1117;
+    color: #ffffff;
+    line-height: 1.6;
 }
 
-header {
-  background: #15171b;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #161b22;
 }
 
-nav a {
-  color: #ccc;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  font-weight: 500;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
 }
 
-.kachel-slider {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+.nav-links a {
+    color: #c9d1d9;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.kachel-slider::-webkit-scrollbar {
-  display: none;
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
 }
 
-.kachel {
-  flex: 0 0 25%;
-  scroll-snap-align: start;
-  padding: 3rem 2rem;
-  margin: 1rem;
-  border-radius: 12px;
-  font-size: 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  background: var(--color, #444);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
-.kachel:hover {
-  transform: scale(1.05);
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #8b949e;
 }
 
-.kachel:nth-child(1) { --color: #3b3f45; }
-.kachel:nth-child(2) { --color: #5c6370; }
-.kachel:nth-child(3) { --color: #72808e; }
-.kachel:nth-child(4) { --color: #8e9ba8; }
-.kachel:nth-child(5) { --color: #a8b6c3; }
-.kachel:nth-child(6) { --color: #c4cbd1; }
-.kachel:nth-child(7) { --color: #7b7260; }
-.kachel:nth-child(8) { --color: #91836d; }
+.btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #238636;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
-.content-area {
-  margin-top: 2rem;
-  padding: 2rem;
-  background: #2a2e33;
-  border-top: 2px solid #444;
-  min-height: 150px;
-  transition: all 0.3s ease;
+.tiles {
+    display: flex;
+    overflow-x: auto;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.tile {
+    flex: 0 0 250px;
+    background-color: #21262d;
+    padding: 1.5rem;
+    border-radius: 8px;
+    min-height: 200px;
+}
+
+.tile.highlight {
+    background-color: #9a6700;
+    color: #fff;
+}
+
+.tile .btn.small {
+    background-color: #0d1117;
+    margin-top: 1rem;
 }

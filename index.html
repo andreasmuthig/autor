@@ -1,38 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Andreas Muthig – KI & Buch</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andreas Muthig – Buchautor</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Andreas Muthig</h1>
-    <nav>
-      <a href="#">Über mich</a>
-      <a href="#">Prompts & Tools</a>
-      <a href="#">Neuigkeiten</a>
-      <a href="#">In Aktion</a>
-    </nav>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ANDREAS MUTHIG</div>
+            <ul class="nav-links">
+                <li><a href="#">Über mich</a></li>
+                <li><a href="#">Prompts & Tools</a></li>
+                <li><a href="#">Neuigkeiten</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="kachel-slider">
-    <div class="kachel" data-content="content1">Über mich</div>
-    <div class="kachel" data-content="content2">Prompts & Tools</div>
-    <div class="kachel" data-content="content3">Neuigkeiten</div>
-    <div class="kachel" data-content="content4">In Aktion mit GPT</div>
-    <div class="kachel" data-content="content5">Kapitel 1</div>
-    <div class="kachel" data-content="content6">Kapitel 2</div>
-    <div class="kachel" data-content="content7">Kapitel 3</div>
-    <div class="kachel" data-content="content8">Kontakt</div>
-  </section>
+    <section class="hero">
+        <h1>Die Technik der klugen Frage</h1>
+        <p>Wie du mit ChatGPT nicht einfach fragst – sondern weiterdenkst. Klare Antworten durch gezielte Prompt-Techniken.</p>
+        <a href="#" class="btn">Mehr erfahren</a>
+    </section>
 
-  <section id="kachel-content" class="content-area">
-    <p>Klicke auf eine Kachel, um den Inhalt zu sehen …</p>
-  </section>
+    <section class="tiles">
+        <div class="tile">
+            <h2>Über mich</h2>
+            <p>Ich bin Andreas, Technikliebhaber und Buchautor – immer auf der Suche nach der richtigen Frage.</p>
+        </div>
+        <div class="tile">
+            <h2>Prompts & Tools</h2>
+            <p>Vorlagen und Anwendungen für bessere Ergebnisse mit KI.</p>
+        </div>
+        <div class="tile">
+            <h2>Neuigkeiten</h2>
+            <p>Aktuelles zu Projekten, Veröffentlichungen und mehr.</p>
+        </div>
+        <div class="tile highlight">
+            <h2>In Aktion mit GPT</h2>
+            <a href="#" class="btn small">Jetzt Beitrag lesen</a>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
